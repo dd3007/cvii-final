@@ -7,7 +7,7 @@
 #SBATCH --gpus-per-node=4
 #SBATCH --cpus-per-gpu=8
 
-EXP_NAME=finetuned_baseline_small_vit
+EXP_NAME=finetuned_new_small_${dataset}_vit
 SAVE_DIR="/mnt/home/mpaez/ceph/dani_cv2/finetune/${EXP_NAME}_e1/"
 
 master_node=$SLURMD_NODENAME
@@ -18,7 +18,7 @@ srun python `which torchrun` \
     --rdzv_id $SLURM_JOB_ID \
     --rdzv_backend c10d \
     --rdzv_endpoint $master_node:29500 \
-    /mnt/home/mpaez/cvii-final/med_mae/main_med_finetune.py \
+    /mnt/home/mpaez/cvii-final/med_mae/new_main_med_finetune.py \
     --output_dir ${SAVE_DIR} \
     --log_dir ${SAVE_DIR} \
     --batch_size 32 \
@@ -26,7 +26,7 @@ srun python `which torchrun` \
     --finetune "/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth" \
     --dataset chestxray14 \
     --nb_classes 14 \
-    --epochs 50 \
+    --epochs 100 \
     --blr 2.5e-4 --layer_decay 0.55 --weight_decay 0.05 \
     --warmup_epochs 5 \
     --drop_path 0.2 \
