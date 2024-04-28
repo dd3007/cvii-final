@@ -210,6 +210,7 @@ def main(args):
         dataset_val = CheXpert(csv_path="/mnt/home/mpaez/ceph/CheXpert-v1.0-small/valid.csv", image_root_path='/mnt/home/mpaez/ceph/CheXpert-v1.0-small', use_upsampling=False,
                             use_frontal=True, mode='valid', class_index=-1, transform=transform_train,
                             heatmap_path=heatmap_path, pretraining=False)
+        # CheXpert doesn't have a test set, so we use the validation set for testing
         dataset_test = CheXpert(csv_path="data/chexpert/valid.csv", image_root_path='data/chexpert/', use_upsampling=False,
                             use_frontal=True, mode='valid', class_index=-1, transform=transform_train,
                             heatmap_path=heatmap_path, pretraining=False)
