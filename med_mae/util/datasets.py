@@ -15,9 +15,8 @@ from torchvision import datasets, transforms
 
 from timm.data import create_transform
 from timm.data.constants import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
-from util.dataloader_med import RetinaDataset, Augmentation, Node21, ChestX_ray14, Covidx, CheXpert
+from util.dataloader_med import RetinaDataset, Augmentation, ChestX_ray14, CheXpert
 from .custom_transforms import GaussianBlur
-import torch
 from .augment import new_data_aug_generator
 
 def build_dataset(is_train, args):
@@ -65,11 +64,6 @@ def build_dataset_chest_xray(split, args):
     if args.dataset == 'chestxray':
         data_list = getattr(args, f'{split}_list')
         dataset = ChestX_ray14(args.data_path, data_list, augment=transform, num_class=14)
-    elif args.dataset == 'covidx':
-        print(args.dataset)
-        dataset = Covidx(data_dir=args.data_path, phase=split, transform=transform)
-    elif args.dataset == 'node21':
-        dataset = Node21(data_dir=args.data_path, phase=split, transform=transform)
     elif args.dataset == 'chexpert':
         if split == 'train':
             mode = 'train'
@@ -117,7 +111,7 @@ def build_transform(is_train, args):
             raise NotImplementedError
     else:
         try:
-            if args.dataset == 'chestxray' or args.dataset == 'covidx' or args.dataset == 'chexpert':
+            if args.dataset == 'chestxray' or args.dataset == 'chexpert':
                 mean = (0.5056, 0.5056, 0.5056)
                 std = (0.252, 0.252, 0.252)
             elif args.dataset == 'imagenet':
@@ -163,4 +157,3 @@ def build_transform(is_train, args):
     t.append(transforms.ToTensor())
     t.append(transforms.Normalize(mean, std))
     return transforms.Compose(t)
-
