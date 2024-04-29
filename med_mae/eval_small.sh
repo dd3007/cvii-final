@@ -7,7 +7,7 @@
 #SBATCH --gpus-per-node=4
 #SBATCH --cpus-per-gpu=8
 
-EXP_NAME=finetuned_new_small_chexpert_vit
+EXP_NAME=finetuned_eval_new_small_chexpert_vit
 SAVE_DIR="/mnt/home/mpaez/ceph/dani_cv2/finetune/${EXP_NAME}_e1/"
 
 master_node=$SLURMD_NODENAME
@@ -34,3 +34,5 @@ srun python `which torchrun` \
     --vit_dropout_rate 0 \
     --num_workers 4 \
     --eval_interval 10 \
+    --resume "finetune_chexpert_base_tiny_100epochs_4gpus.pth" \
+    --eval
