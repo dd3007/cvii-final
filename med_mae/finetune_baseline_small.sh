@@ -24,8 +24,8 @@ srun python `which torchrun` \
     --batch_size 32 \
     --model vit_small_patch16 \
     --finetune "/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth" \
-    --dataset chexpert \
-    --nb_classes 5 \
+    --dataset chestxray14 \
+    --nb_classes 14 \
     --epochs 100 \
     --blr 2.5e-4 --layer_decay 0.55 --weight_decay 0.05 \
     --warmup_epochs 5 \

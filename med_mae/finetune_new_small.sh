@@ -1,13 +1,13 @@
 #!/bin/bash
 
 #SBATCH -p gpu
-#SBATCH -N 6
+#SBATCH -N 4
 #SBATCH -C a100,ib
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-node=4
 #SBATCH --cpus-per-gpu=8
 
-EXP_NAME=finetuned_new_small_${dataset}_vit
+EXP_NAME=finetuned_new_small_chexpert_vit
 SAVE_DIR="/mnt/home/mpaez/ceph/dani_cv2/finetune/${EXP_NAME}_e1/"
 
 master_node=$SLURMD_NODENAME
@@ -24,9 +24,9 @@ srun python `which torchrun` \
     --batch_size 32 \
     --model vit_small_patch16 \
     --finetune "/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth" \
-    --dataset chestxray14 \
-    --nb_classes 14 \
-    --epochs 100 \
+    --dataset chexpert \
+    --nb_classes 5 \
+    --epochs 50 \
     --blr 2.5e-4 --layer_decay 0.55 --weight_decay 0.05 \
     --warmup_epochs 5 \
     --drop_path 0.2 \
