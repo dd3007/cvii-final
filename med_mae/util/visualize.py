@@ -7,27 +7,56 @@
 # Plot 5 - Finetuning Evaluation mAUC for each experiment on CheXpert
 
 import matplotlib.pyplot as plt
+import os
 
-# Define file paths
+def plot_loss(data, dataset_name, output_dir):
+    for key, finetune_log in data.items():
+        train_loss = [line['train_loss'] for line in finetune_log]
+        test_loss = [line['test_loss'] for line in finetune_log]
+        epochs = [line['epoch'] for line in finetune_log]
+
+        plt.plot(epochs, train_loss, label=f'{key} (train)')
+        plt.plot(epochs, test_loss, label=f'{key} (eval)')
+
+    plt.title(f'Finetuning Train and Evaluation Loss on {dataset_name}')
+    plt.xlabel('Epoch')
+    plt.ylabel('Loss')
+    plt.legend()
+    plt.savefig(os.path.join(output_dir, f'finetune_loss_{dataset_name.lower()}.png'))
+    plt.clf()
+
+def plot_auc(data, dataset_name, output_dir):
+    for key, finetune_log in data.items():
+        eval_auc = [line['test_auc_avg'] for line in finetune_log]
+        epochs = [line['epoch'] for line in finetune_log]
+
+        plt.plot(epochs, eval_auc, label=key)
+
+    plt.title(f'Evaluation mAUC on {dataset_name}')
+    plt.xlabel('Epoch')
+    plt.ylabel('mAUC')
+    plt.legend()
+    plt.savefig(os.path.join(output_dir, f'finetune_auc_{dataset_name.lower()}.png'))
+    plt.clf()
+
+def truncate_data(data):
+    min_epochs = min(len(d) for d in data.values())
+    return {k: v[:min_epochs] for k, v in data.items()}
+
+base_dir = '/mnt/home/mpaez/cvii-final/med_mae/results'
+output_dir = '/mnt/home/mpaez/cvii-final/med_mae/plots'  # Changed to reflect the base directory
+
+# Define file paths for the datasets
 finetune_chestxray14_files = {
-    'Baseline': '../results/finetune_baseline_small/finetuned_baseline_small_chestxray14_50epoch.txt',
-    'New': '../results/finetune_new_small/finetuned_new_small_chestxray14_50epochs.txt',
+    'Baseline': os.path.join(base_dir, 'finetune_baseline_small', 'finetuned_baseline_small_chestxray14_50epoch.txt'),
+    'New': os.path.join(base_dir, 'finetune_new_small', 'finetuned_new_small_chestxray14_50epoch.txt'),
 }
 finetune_chexpert_files = {
-    'Baseline': '../results/finetune_baseline_small/finetuned_baseline_small_chexpert_50epoch.txt',
-    'New': '../results/finetune_new_small/finetuned_new_small_chexpert_50epoch.txt',
+    'Baseline': os.path.join(base_dir, 'finetune_baseline_small', 'finetuned_baseline_small_chexpert_100epoch.txt'),
+    'New': os.path.join(base_dir, 'finetune_new_small', 'finetuned_new_small_chexpert_50epoch.txt'),
 }
 
-output_dir = '.'
-
-distill_data = {}
-# Read files
-for key, distill_file in distill_files.items():
-    with open(distill_file, 'r') as file:
-        distill_log = file.readlines()
-        distill_log = [eval(line) for line in distill_log]
-        distill_data[key] = distill_log
-
+# Read and parse files
 finetune_chestxray14_data = {}
 for key, finetune_file in finetune_chestxray14_files.items():
     with open(finetune_file, 'r') as file:
@@ -42,87 +71,12 @@ for key, finetune_file in finetune_chexpert_files.items():
         finetune_log = [eval(line) for line in finetune_log]
         finetune_chexpert_data[key] = finetune_log
 
-# Distillation loss plot
-for key, distill_log in distill_data.items():
-    train_loss = []
-    epoch = []
-    for line in distill_log:
-        train_loss.append(line['train_loss'])
-        epoch.append(line['epoch'])
-    plt.plot(epoch, train_loss, label=key)
-plt.title('Distillation Loss')
-plt.xlabel('Epoch')
-plt.ylabel('Loss')
-plt.legend()
-plt.savefig(output_dir + '/knowledge_distillation_loss.png')
-plt.clf()
+# Ensure all datasets have the same number of epochs
+finetune_chestxray14_data = truncate_data(finetune_chestxray14_data)
+finetune_chexpert_data = truncate_data(finetune_chexpert_data)
 
-# CHESTXRAY14 PLOTS
-
-# Finetuning loss plot for chestxray14
-for key, finetune_log in finetune_chestxray14_data.items():
-    train_loss = []
-    test_loss = []
-    epoch = []
-    for line in finetune_log:
-        train_loss.append(line['train_loss'])
-        test_loss.append(line['test_loss'])
-        epoch.append(line['epoch'])
-    plt.plot(epoch, train_loss, label=key + ' (train)')
-    plt.plot(epoch, test_loss, label=key + ' (eval)')
-plt.title('Finetuning Train and Evaluation Loss on ChestXray14')
-plt.xlabel('Epoch')
-plt.ylabel('Loss')
-plt.legend()
-plt.savefig(output_dir + '/finetune_loss_chestxray14.png')
-plt.clf()
-
-# Finetuning evaluation metrics plot for chestxray14
-for key, finetune_log in finetune_chestxray14_data.items():
-    eval_acc = []
-    epoch = []
-    for line in finetune_log:
-        eval_acc.append(line['test_auc_avg'])
-        epoch.append(line['epoch'])
-    plt.plot(epoch, eval_acc, label=key)
-plt.title('Evaluation mAUC on ChestXray14')
-plt.xlabel('Epoch')
-plt.ylabel('mAUC')
-plt.legend()
-plt.savefig(output_dir + '/finetune_auc_chestxray14.png')
-plt.clf()
-
-# CHEXPERT PLOTS
-
-# Finetuning loss plot for chestxray14
-for key, finetune_log in finetune_chexpert_data.items():
-    train_loss = []
-    test_loss = []
-    epoch = []
-    for line in finetune_log:
-        train_loss.append(line['train_loss'])
-        test_loss.append(line['test_loss'])
-        epoch.append(line['epoch'])
-    plt.plot(epoch, train_loss, label=key + ' (train)')
-    plt.plot(epoch, test_loss, label=key + ' (eval)')
-plt.title('Finetuning Train and Evaluation Loss on CheXpert')
-plt.xlabel('Epoch')
-plt.ylabel('Loss')
-plt.legend()
-plt.savefig(output_dir + '/finetune_loss_chexpert.png')
-plt.clf()
-
-# Finetuning evaluation metrics plot for chexpert
-for key, finetune_log in finetune_chexpert_data.items():
-    eval_acc = []
-    epoch = []
-    for line in finetune_log:
-        eval_acc.append(line['test_auc_avg'])
-        epoch.append(line['epoch'])
-    plt.plot(epoch, eval_acc, label=key)
-plt.title('Evaluation mAUC on CheXpert')
-plt.xlabel('Epoch')
-plt.ylabel('mAUC')
-plt.legend()
-plt.savefig(output_dir + '/finetune_auc_chexpert.png')
-plt.clf()
+# Plotting
+plot_loss(finetune_chestxray14_data, 'ChestXray14', output_dir)
+plot_auc(finetune_chestxray14_data, 'ChestXray14', output_dir)
+plot_loss(finetune_chexpert_data, 'CheXpert', output_dir)
+plot_auc(finetune_chexpert_data, 'CheXpert', output_dir)
