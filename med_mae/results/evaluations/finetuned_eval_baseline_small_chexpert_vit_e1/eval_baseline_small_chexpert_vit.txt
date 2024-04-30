@@ -1,0 +1,2848 @@
+git W0429 20:16:43.183472 23456247911936 torch/distributed/run.py:757] 
+W0429 20:16:43.183472 23456247911936 torch/distributed/run.py:757] *****************************************
+W0429 20:16:43.183472 23456247911936 torch/distributed/run.py:757] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0429 20:16:43.183472 23456247911936 torch/distributed/run.py:757] *****************************************
+W0429 20:16:43.183703 23456247911936 torch/distributed/run.py:757] 
+W0429 20:16:43.183703 23456247911936 torch/distributed/run.py:757] *****************************************
+W0429 20:16:43.183703 23456247911936 torch/distributed/run.py:757] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0429 20:16:43.183703 23456247911936 torch/distributed/run.py:757] *****************************************
+W0429 20:16:43.190519 23456247911936 torch/distributed/run.py:757] 
+W0429 20:16:43.190519 23456247911936 torch/distributed/run.py:757] *****************************************
+W0429 20:16:43.190519 23456247911936 torch/distributed/run.py:757] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0429 20:16:43.190519 23456247911936 torch/distributed/run.py:757] *****************************************
+W0429 20:16:43.324679 23456247911936 torch/distributed/run.py:757] 
+W0429 20:16:43.324679 23456247911936 torch/distributed/run.py:757] *****************************************
+W0429 20:16:43.324679 23456247911936 torch/distributed/run.py:757] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0429 20:16:43.324679 23456247911936 torch/distributed/run.py:757] *****************************************
+| distributed init (rank 0): env://, gpu 0
+| distributed init (rank 4): env://, gpu 0
+| distributed init (rank 12): env://, gpu 0
+| distributed init (rank 2): env://, gpu 2
+| distributed init (rank 3): env://, gpu 3
+| distributed init (rank 1): env://, gpu 1
+| distributed init (rank 7): env://, gpu 3
+| distributed init (rank 5): env://, gpu 1
+| distributed init (rank 6): env://, gpu 2
+| distributed init (rank 13): env://, gpu 1
+| distributed init (rank 15): env://, gpu 3
+| distributed init (rank 14): env://, gpu 2
+| distributed init (rank 8): env://, gpu 0
+| distributed init (rank 9): env://, gpu 1
+| distributed init (rank 11): env://, gpu 3
+| distributed init (rank 10): env://, gpu 2
+[20:16:51.868934] [20:16:51.868936] job dir: /mnt/home/mpaez/cvii-final/med_maejob dir: /mnt/home/mpaez/cvii-final/med_mae
+
+[20:16:51.868947] job dir: /mnt/home/mpaez/cvii-final/med_mae
+[20:16:51.868992] job dir: /mnt/home/mpaez/cvii-final/med_mae
+[20:16:51.868910] [20:16:51.868908] job dir: /mnt/home/mpaez/cvii-final/med_maejob dir: /mnt/home/mpaez/cvii-final/med_mae
+
+[20:16:51.868940] [20:16:51.868941] job dir: /mnt/home/mpaez/cvii-final/med_maejob dir: /mnt/home/mpaez/cvii-final/med_mae
+
+[20:16:51.868955] [20:16:51.868957] job dir: /mnt/home/mpaez/cvii-final/med_mae
+job dir: /mnt/home/mpaez/cvii-final/med_mae
+[20:16:51.869038] [20:16:51.869039] Namespace(accum_iter=1,
+batch_size=32,
+blr=0.00025,
+checkpoint_type=None,
+clip_grad=None,
+cutmix=0.0,
+cutmix_minmax=None,
+dataset='chexpert',
+device='cuda',
+dist_backend='nccl',
+dist_eval=False,
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+drop_path=0.2,
+epochs=50,
+eval=True,
+eval_interval=10,
+finetune='/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth',
+fixed_lr=False,
+global_pool=True,
+gpu=2,
+input_size=224,
+layer_decay=0.55,
+local_rank=-1,
+log_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+loss_func=None,
+lr=None,
+min_lr=1e-06,
+mixup=0.0,
+mixup_mode='batch',
+mixup_prob=1.0,
+mixup_switch_prob=0.5,
+model='vit_small_patch16',
+nb_classes=5,
+num_workers=4,
+optimizer='adamw',
+output_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+pin_mem=True,
+rank=2,
+repeated_aug=False,
+resume='finetuned_baseline_small_chexpert_50epoch.pth',
+seed=0,
+[20:16:51.868925] [20:16:51.868926] job dir: /mnt/home/mpaez/cvii-final/med_maejob dir: /mnt/home/mpaez/cvii-final/med_mae
+
+[20:16:51.868842] job dir: /mnt/home/mpaez/cvii-final/med_mae[20:16:51.868846] 
+[20:16:51.868848] [20:16:51.868844] job dir: /mnt/home/mpaez/cvii-final/med_mae
+job dir: /mnt/home/mpaez/cvii-final/med_maejob dir: /mnt/home/mpaez/cvii-final/med_mae
+
+smoothing=0.1,
+start_epoch=0,
+vit_dropout_rate=0.0,
+warmup_epochs=5,
+weight_decay=0.05,
+world_size=16)[20:16:51.869040] 
+Namespace(accum_iter=1,
+batch_size=32,
+blr=0.00025,
+checkpoint_type=None,
+clip_grad=None,
+cutmix=0.0,
+cutmix_minmax=None,
+dataset='chexpert',
+device='cuda',
+dist_backend='nccl',
+dist_eval=False,
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+drop_path=0.2,
+epochs=50,
+eval=True,
+eval_interval=10,
+finetune='/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth',
+fixed_lr=False,
+global_pool=True,
+gpu=3,
+input_size=224,
+layer_decay=0.55,
+local_rank=-1,
+log_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+loss_func=None,
+lr=None,
+min_lr=1e-06,
+mixup=0.0,
+mixup_mode='batch',
+mixup_prob=1.0,
+mixup_switch_prob=0.5,
+model='vit_small_patch16',
+nb_classes=5,
+num_workers=4,
+optimizer='adamw',
+output_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+pin_mem=True,
+rank=3,
+[20:16:51.869012] [20:16:51.869013] Namespace(accum_iter=1,
+batch_size=32,
+blr=0.00025,
+checkpoint_type=None,
+clip_grad=None,
+cutmix=0.0,
+cutmix_minmax=None,
+dataset='chexpert',
+device='cuda',
+dist_backend='nccl',
+dist_eval=False,
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+drop_path=0.2,
+epochs=50,
+eval=True,
+eval_interval=10,
+finetune='/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth',
+fixed_lr=False,
+global_pool=True,
+gpu=2,
+input_size=224,
+layer_decay=0.55,
+local_rank=-1,
+log_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+loss_func=None,
+lr=None,
+min_lr=1e-06,
+mixup=0.0,
+mixup_mode='batch',
+mixup_prob=1.0,
+mixup_switch_prob=0.5,
+model='vit_small_patch16',
+nb_classes=5,
+num_workers=4,
+optimizer='adamw',
+output_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+pin_mem=True,
+rank=14,
+repeated_aug=False,
+resume='finetuned_baseline_small_chexpert_50epoch.pth',
+seed=0,
+[20:16:51.869047] [20:16:51.869048] Namespace(accum_iter=1,
+batch_size=32,
+blr=0.00025,
+checkpoint_type=None,
+clip_grad=None,
+cutmix=0.0,
+cutmix_minmax=None,
+dataset='chexpert',
+device='cuda',
+dist_backend='nccl',
+dist_eval=False,
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+drop_path=0.2,
+epochs=50,
+eval=True,
+eval_interval=10,
+finetune='/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth',
+fixed_lr=False,
+global_pool=True,
+gpu=2,
+input_size=224,
+layer_decay=0.55,
+local_rank=-1,
+log_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+loss_func=None,
+lr=None,
+min_lr=1e-06,
+mixup=0.0,
+mixup_mode='batch',
+mixup_prob=1.0,
+mixup_switch_prob=0.5,
+model='vit_small_patch16',
+nb_classes=5,
+num_workers=4,
+optimizer='adamw',
+output_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+pin_mem=True,
+rank=6,
+repeated_aug=False,
+resume='finetuned_baseline_small_chexpert_50epoch.pth',
+seed=0,
+repeated_aug=False,
+resume='finetuned_baseline_small_chexpert_50epoch.pth',
+seed=0,
+smoothing=0.1,
+start_epoch=0,
+vit_dropout_rate=0.0,
+warmup_epochs=5,
+weight_decay=0.05,
+world_size=16)Namespace(accum_iter=1,
+batch_size=32,
+blr=0.00025,
+checkpoint_type=None,
+clip_grad=None,
+cutmix=0.0,
+cutmix_minmax=None,
+dataset='chexpert',
+device='cuda',
+dist_backend='nccl',
+dist_eval=False,
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+drop_path=0.2,
+epochs=50,
+eval=True,
+eval_interval=10,
+finetune='/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth',
+fixed_lr=False,
+global_pool=True,
+gpu=0,
+input_size=224,
+layer_decay=0.55,
+local_rank=-1,
+log_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+loss_func=None,
+lr=None,
+min_lr=1e-06,
+mixup=0.0,
+mixup_mode='batch',
+mixup_prob=1.0,
+mixup_switch_prob=0.5,
+model='vit_small_patch16',
+nb_classes=5,
+num_workers=4,
+optimizer='adamw',
+smoothing=0.1,
+start_epoch=0,
+vit_dropout_rate=0.0,
+warmup_epochs=5,
+weight_decay=0.05,
+world_size=16)Namespace(accum_iter=1,
+batch_size=32,
+blr=0.00025,
+checkpoint_type=None,
+clip_grad=None,
+cutmix=0.0,
+cutmix_minmax=None,
+dataset='chexpert',
+device='cuda',
+dist_backend='nccl',
+dist_eval=False,
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+drop_path=0.2,
+epochs=50,
+eval=True,
+eval_interval=10,
+finetune='/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth',
+fixed_lr=False,
+global_pool=True,
+gpu=3,
+input_size=224,
+layer_decay=0.55,
+local_rank=-1,
+log_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+loss_func=None,
+lr=None,
+min_lr=1e-06,
+mixup=0.0,
+mixup_mode='batch',
+mixup_prob=1.0,
+mixup_switch_prob=0.5,
+model='vit_small_patch16',
+nb_classes=5,
+num_workers=4,
+optimizer='adamw',
+output_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+pin_mem=True,
+rank=15,
+[20:16:51.868955] [20:16:51.868957] Namespace(accum_iter=1,
+batch_size=32,
+blr=0.00025,
+checkpoint_type=None,
+clip_grad=None,
+cutmix=0.0,
+cutmix_minmax=None,
+dataset='chexpert',
+device='cuda',
+dist_backend='nccl',
+dist_eval=False,
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+drop_path=0.2,
+epochs=50,
+eval=True,
+eval_interval=10,
+finetune='/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth',
+fixed_lr=False,
+global_pool=True,
+gpu=1,
+input_size=224,
+layer_decay=0.55,
+local_rank=-1,
+log_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+loss_func=None,
+lr=None,
+min_lr=1e-06,
+mixup=0.0,
+mixup_mode='batch',
+mixup_prob=1.0,
+mixup_switch_prob=0.5,
+model='vit_small_patch16',
+nb_classes=5,
+num_workers=4,
+optimizer='adamw',
+output_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+pin_mem=True,
+rank=9,
+repeated_aug=False,
+resume='finetuned_baseline_small_chexpert_50epoch.pth',
+seed=0,
+smoothing=0.1,
+start_epoch=0,
+vit_dropout_rate=0.0,
+warmup_epochs=5,
+weight_decay=0.05,
+world_size=16)Namespace(accum_iter=1,
+batch_size=32,
+blr=0.00025,
+checkpoint_type=None,
+clip_grad=None,
+cutmix=0.0,
+cutmix_minmax=None,
+dataset='chexpert',
+device='cuda',
+dist_backend='nccl',
+dist_eval=False,
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+drop_path=0.2,
+epochs=50,
+eval=True,
+eval_interval=10,
+finetune='/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth',
+fixed_lr=False,
+global_pool=True,
+gpu=3,
+input_size=224,
+layer_decay=0.55,
+local_rank=-1,
+log_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+loss_func=None,
+lr=None,
+min_lr=1e-06,
+mixup=0.0,
+mixup_mode='batch',
+mixup_prob=1.0,
+mixup_switch_prob=0.5,
+model='vit_small_patch16',
+nb_classes=5,
+num_workers=4,
+optimizer='adamw',
+output_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+pin_mem=True,
+rank=7,
+repeated_aug=False,
+output_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+pin_mem=True,
+rank=0,
+repeated_aug=False,
+resume='finetuned_baseline_small_chexpert_50epoch.pth',
+seed=0,
+smoothing=0.1,
+start_epoch=0,
+vit_dropout_rate=0.0,
+warmup_epochs=5,
+weight_decay=0.05,
+world_size=16)
+
+repeated_aug=False,
+resume='finetuned_baseline_small_chexpert_50epoch.pth',
+seed=0,
+smoothing=0.1,
+start_epoch=0,
+vit_dropout_rate=0.0,
+warmup_epochs=5,
+weight_decay=0.05,
+world_size=16)
+smoothing=0.1,
+start_epoch=0,
+vit_dropout_rate=0.0,
+warmup_epochs=5,
+weight_decay=0.05,
+world_size=16)
+Namespace(accum_iter=1,
+batch_size=32,
+blr=0.00025,
+checkpoint_type=None,
+clip_grad=None,
+cutmix=0.0,
+cutmix_minmax=None,
+dataset='chexpert',
+device='cuda',
+dist_backend='nccl',
+dist_eval=False,
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+drop_path=0.2,
+epochs=50,
+eval=True,
+eval_interval=10,
+finetune='/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth',
+fixed_lr=False,
+global_pool=True,
+gpu=0,
+input_size=224,
+layer_decay=0.55,
+local_rank=-1,
+log_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+loss_func=None,
+lr=None,
+min_lr=1e-06,
+mixup=0.0,
+mixup_mode='batch',
+mixup_prob=1.0,
+mixup_switch_prob=0.5,
+model='vit_small_patch16',
+nb_classes=5,
+num_workers=4,
+optimizer='adamw',
+output_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+pin_mem=True,
+rank=8,
+resume='finetuned_baseline_small_chexpert_50epoch.pth',
+seed=0,
+smoothing=0.1,
+start_epoch=0,
+vit_dropout_rate=0.0,
+warmup_epochs=5,
+weight_decay=0.05,
+world_size=16)[20:16:51.869051] 
+
+[20:16:51.869053] Namespace(accum_iter=1,
+batch_size=32,
+blr=0.00025,
+checkpoint_type=None,
+clip_grad=None,
+cutmix=0.0,
+cutmix_minmax=None,
+dataset='chexpert',
+device='cuda',
+dist_backend='nccl',
+dist_eval=False,
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+drop_path=0.2,
+epochs=50,
+eval=True,
+eval_interval=10,
+finetune='/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth',
+fixed_lr=False,
+global_pool=True,
+gpu=1,
+input_size=224,
+layer_decay=0.55,
+local_rank=-1,
+log_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+loss_func=None,
+lr=None,
+min_lr=1e-06,
+mixup=0.0,
+mixup_mode='batch',
+mixup_prob=1.0,
+mixup_switch_prob=0.5,
+model='vit_small_patch16',
+nb_classes=5,
+num_workers=4,
+optimizer='adamw',
+[20:16:51.869102] Namespace(accum_iter=1,
+batch_size=32,
+blr=0.00025,
+checkpoint_type=None,
+clip_grad=None,
+cutmix=0.0,
+cutmix_minmax=None,
+dataset='chexpert',
+device='cuda',
+dist_backend='nccl',
+dist_eval=False,
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+drop_path=0.2,
+epochs=50,
+eval=True,
+eval_interval=10,
+finetune='/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth',
+fixed_lr=False,
+global_pool=True,
+gpu=1,
+input_size=224,
+layer_decay=0.55,
+local_rank=-1,
+log_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+loss_func=None,
+lr=None,
+min_lr=1e-06,
+mixup=0.0,
+mixup_mode='batch',
+mixup_prob=1.0,
+mixup_switch_prob=0.5,
+model='vit_small_patch16',
+nb_classes=5,
+num_workers=4,
+optimizer='adamw',
+output_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+pin_mem=True,
+rank=1,
+repeated_aug=False,
+resume='finetuned_baseline_small_chexpert_50epoch.pth',
+seed=0,
+smoothing=0.1,
+
+[20:16:51.869035] Namespace(accum_iter=1,
+batch_size=32,
+blr=0.00025,
+checkpoint_type=None,
+clip_grad=None,
+cutmix=0.0,
+cutmix_minmax=None,
+dataset='chexpert',
+device='cuda',
+dist_backend='nccl',
+dist_eval=False,
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+drop_path=0.2,
+epochs=50,
+eval=True,
+eval_interval=10,
+finetune='/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth',
+fixed_lr=False,
+global_pool=True,
+gpu=1,
+input_size=224,
+layer_decay=0.55,
+local_rank=-1,
+log_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+loss_func=None,
+lr=None,
+min_lr=1e-06,
+mixup=0.0,
+mixup_mode='batch',
+mixup_prob=1.0,
+mixup_switch_prob=0.5,
+model='vit_small_patch16',
+nb_classes=5,
+num_workers=4,
+optimizer='adamw',
+output_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+pin_mem=True,
+rank=13,
+repeated_aug=False,
+resume='finetuned_baseline_small_chexpert_50epoch.pth',
+seed=0,
+smoothing=0.1,
+repeated_aug=False,
+resume='finetuned_baseline_small_chexpert_50epoch.pth',
+seed=0,
+smoothing=0.1,
+start_epoch=0,
+vit_dropout_rate=0.0,
+warmup_epochs=5,
+weight_decay=0.05,
+world_size=16)
+[20:16:51.868966] [20:16:51.868968] Namespace(accum_iter=1,
+batch_size=32,
+blr=0.00025,
+checkpoint_type=None,
+clip_grad=None,
+cutmix=0.0,
+cutmix_minmax=None,
+dataset='chexpert',
+device='cuda',
+dist_backend='nccl',
+dist_eval=False,
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+drop_path=0.2,
+epochs=50,
+eval=True,
+eval_interval=10,
+finetune='/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth',
+fixed_lr=False,
+global_pool=True,
+gpu=3,
+input_size=224,
+layer_decay=0.55,
+local_rank=-1,
+log_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+loss_func=None,
+lr=None,
+min_lr=1e-06,
+mixup=0.0,
+mixup_mode='batch',
+mixup_prob=1.0,
+mixup_switch_prob=0.5,
+model='vit_small_patch16',
+nb_classes=5,
+num_workers=4,
+optimizer='adamw',
+output_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+pin_mem=True,
+rank=5,
+repeated_aug=False,
+resume='finetuned_baseline_small_chexpert_50epoch.pth',
+seed=0,
+smoothing=0.1,
+start_epoch=0,
+vit_dropout_rate=0.0,
+warmup_epochs=5,
+weight_decay=0.05,
+world_size=16)
+Namespace(accum_iter=1,
+batch_size=32,
+blr=0.00025,
+checkpoint_type=None,
+clip_grad=None,
+cutmix=0.0,
+cutmix_minmax=None,
+dataset='chexpert',
+device='cuda',
+dist_backend='nccl',
+dist_eval=False,
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+drop_path=0.2,
+epochs=50,
+eval=True,
+eval_interval=10,
+finetune='/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth',
+fixed_lr=False,
+global_pool=True,
+gpu=0,
+input_size=224,
+layer_decay=0.55,
+local_rank=-1,
+log_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+loss_func=None,
+lr=None,
+min_lr=1e-06,
+mixup=0.0,
+mixup_mode='batch',
+mixup_prob=1.0,
+mixup_switch_prob=0.5,
+start_epoch=0,
+vit_dropout_rate=0.0,
+warmup_epochs=5,
+weight_decay=0.05,
+world_size=16)
+start_epoch=0,
+vit_dropout_rate=0.0,
+warmup_epochs=5,
+weight_decay=0.05,
+world_size=16)
+output_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+pin_mem=True,
+rank=11,
+repeated_aug=False,
+resume='finetuned_baseline_small_chexpert_50epoch.pth',
+seed=0,
+smoothing=0.1,
+start_epoch=0,
+vit_dropout_rate=0.0,
+warmup_epochs=5,
+weight_decay=0.05,
+world_size=16)
+Namespace(accum_iter=1,
+batch_size=32,
+blr=0.00025,
+checkpoint_type=None,
+clip_grad=None,
+cutmix=0.0,
+cutmix_minmax=None,
+dataset='chexpert',
+device='cuda',
+dist_backend='nccl',
+dist_eval=False,
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+drop_path=0.2,
+epochs=50,
+eval=True,
+eval_interval=10,
+finetune='/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth',
+fixed_lr=False,
+global_pool=True,
+gpu=2,
+input_size=224,
+layer_decay=0.55,
+local_rank=-1,
+log_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+loss_func=None,
+lr=None,
+min_lr=1e-06,
+mixup=0.0,
+mixup_mode='batch',
+mixup_prob=1.0,
+mixup_switch_prob=0.5,
+model='vit_small_patch16',
+nb_classes=5,
+num_workers=4,
+[20:16:51.870224] Using Directly-Resize Mode. (no RandomResizedCrop)
+[20:16:51.869040] Namespace(accum_iter=1,
+batch_size=32,
+blr=0.00025,
+checkpoint_type=None,
+clip_grad=None,
+cutmix=0.0,
+cutmix_minmax=None,
+dataset='chexpert',
+device='cuda',
+dist_backend='nccl',
+dist_eval=False,
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+drop_path=0.2,
+epochs=50,
+eval=True,
+eval_interval=10,
+finetune='/mnt/home/mpaez/cvii-final/med_mae/vit-s_CXR_0.3M_mae.pth',
+fixed_lr=False,
+global_pool=True,
+gpu=0,
+input_size=224,
+layer_decay=0.55,
+local_rank=-1,
+log_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+loss_func=None,
+lr=None,
+min_lr=1e-06,
+mixup=0.0,
+mixup_mode='batch',
+mixup_prob=1.0,
+mixup_switch_prob=0.5,
+model='vit_small_patch16',
+nb_classes=5,
+num_workers=4,
+optimizer='adamw',
+output_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+pin_mem=True,
+rank=12,
+repeated_aug=False,
+resume='finetuned_baseline_small_chexpert_50epoch.pth',
+seed=0,
+smoothing=0.1,
+model='vit_small_patch16',
+nb_classes=5,
+num_workers=4,
+optimizer='adamw',
+output_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+pin_mem=True,
+rank=4,
+repeated_aug=False,
+resume='finetuned_baseline_small_chexpert_50epoch.pth',
+seed=0,
+smoothing=0.1,
+start_epoch=0,
+vit_dropout_rate=0.0,
+warmup_epochs=5,
+weight_decay=0.05,
+world_size=16)
+[20:16:51.870250] Using Directly-Resize Mode. (no RandomResizedCrop)
+start_epoch=0,
+vit_dropout_rate=0.0,
+warmup_epochs=5,
+weight_decay=0.05,
+world_size=16)
+optimizer='adamw',
+output_dir='/mnt/home/mpaez/cvii-final/med_mae/results/evaluations/finetuned_eval_baseline_small_chexpert_vit_e1/',
+pin_mem=True,
+rank=10,
+repeated_aug=False,
+resume='finetuned_baseline_small_chexpert_50epoch.pth',
+seed=0,
+smoothing=0.1,
+start_epoch=0,
+vit_dropout_rate=0.0,
+warmup_epochs=5,
+weight_decay=0.05,
+world_size=16)
+[20:16:51.870200] Using Directly-Resize Mode. (no RandomResizedCrop)
+[20:16:51.870256] Using Directly-Resize Mode. (no RandomResizedCrop)
+[20:16:51.870193] Using Directly-Resize Mode. (no RandomResizedCrop)
+[20:16:51.870229] Using Directly-Resize Mode. (no RandomResizedCrop)
+[20:16:51.870282] Using Directly-Resize Mode. (no RandomResizedCrop)
+[20:16:51.870334] Using Directly-Resize Mode. (no RandomResizedCrop)
+[20:16:51.870712] Using Directly-Resize Mode. (no RandomResizedCrop)
+[20:16:51.870203] Using Directly-Resize Mode. (no RandomResizedCrop)
+[20:16:51.870305] [20:16:51.870305] Using Directly-Resize Mode. (no RandomResizedCrop)
+Using Directly-Resize Mode. (no RandomResizedCrop)
+[20:16:51.870363] Using Directly-Resize Mode. (no RandomResizedCrop)
+[20:16:51.870303] Using Directly-Resize Mode. (no RandomResizedCrop)
+[20:16:51.870318] Using Directly-Resize Mode. (no RandomResizedCrop)
+[20:16:51.870332] Using Directly-Resize Mode. (no RandomResizedCrop)
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:52.754369] Multi-label mode: True, Number of classes: [5]
+[20:16:52.777955] Multi-label mode: True, Number of classes: [5]
+[20:16:52.792820] Multi-label mode: True, Number of classes: [5]
+[20:16:52.793950] Multi-label mode: True, Number of classes: [5]
+[20:16:52.794698] Multi-label mode: True, Number of classes: [5]
+[20:16:52.801671] Multi-label mode: True, Number of classes: [5]
+[20:16:52.803841] Multi-label mode: True, Number of classes: [5]
+[20:16:52.804032] Multi-label mode: True, Number of classes: [5]
+[20:16:52.805268] Multi-label mode: True, Number of classes: [5]
+[20:16:52.806265] Multi-label mode: True, Number of classes: [5]
+[20:16:52.807556] Multi-label mode: True, Number of classes: [5]
+[20:16:52.813312] Multi-label mode: True, Number of classes: [5]
+[20:16:52.815825] Multi-label mode: True, Number of classes: [5]
+[20:16:52.816859] Multi-label mode: True, Number of classes: [5]
+[20:16:52.832251] Multi-label mode: True, Number of classes: [5]
+[20:16:52.838306] Multi-label mode: True, Number of classes: [5]
+[20:16:53.055177] ------------------------------
+[20:16:53.055240] Found 191027 images in total, 23385 positive images, 167642 negative images
+[20:16:53.055252] Cardiomegaly(C0): imbalance ratio is 0.1224
+[20:16:53.055259] 
+[20:16:53.055266] Found 191027 images in total, 61493 positive images, 129534 negative images
+[20:16:53.055273] Edema(C1): imbalance ratio is 0.3219
+[20:16:53.055279] 
+[20:16:53.055286] Found 191027 images in total, 12983 positive images, 178044 negative images
+[20:16:53.055293] Consolidation(C2): imbalance ratio is 0.0680
+[20:16:53.055299] 
+[20:16:53.055307] Found 191027 images in total, 59583 positive images, 131444 negative images
+[20:16:53.055314] Atelectasis(C3): imbalance ratio is 0.3119
+[20:16:53.055320] 
+[20:16:53.055327] Found 191027 images in total, 76899 positive images, 114128 negative images
+[20:16:53.055334] Pleural Effusion(C4): imbalance ratio is 0.4026
+[20:16:53.055341] 
+[20:16:53.055451] ------------------------------
+[20:16:53.068487] ------------------------------
+[20:16:53.068552] Found 191027 images in total, 23385 positive images, 167642 negative images
+[20:16:53.068564] Cardiomegaly(C0): imbalance ratio is 0.1224
+[20:16:53.068571] 
+[20:16:53.068579] Found 191027 images in total, 61493 positive images, 129534 negative images
+[20:16:53.068586] Edema(C1): imbalance ratio is 0.3219
+[20:16:53.068591] 
+[20:16:53.068598] Found 191027 images in total, 12983 positive images, 178044 negative images
+[20:16:53.068604] Consolidation(C2): imbalance ratio is 0.0680
+[20:16:53.068610] 
+[20:16:53.068617] Found 191027 images in total, 59583 positive images, 131444 negative images
+[20:16:53.068623] Atelectasis(C3): imbalance ratio is 0.3119
+[20:16:53.068629] 
+[20:16:53.068635] Found 191027 images in total, 76899 positive images, 114128 negative images
+[20:16:53.068641] Pleural Effusion(C4): imbalance ratio is 0.4026
+[20:16:53.068647] 
+[20:16:53.068740] ------------------------------
+[20:16:53.072501] ------------------------------
+[20:16:53.072545] Found 191027 images in total, 23385 positive images, 167642 negative images
+[20:16:53.072557] Cardiomegaly(C0): imbalance ratio is 0.1224
+[20:16:53.072564] 
+[20:16:53.072572] Found 191027 images in total, 61493 positive images, 129534 negative images
+[20:16:53.072579] Edema(C1): imbalance ratio is 0.3219
+[20:16:53.072584] 
+[20:16:53.072590] Found 191027 images in total, 12983 positive images, 178044 negative images
+[20:16:53.072597] Consolidation(C2): imbalance ratio is 0.0680
+[20:16:53.072604] 
+[20:16:53.072610] Found 191027 images in total, 59583 positive images, 131444 negative images
+[20:16:53.072616] Atelectasis(C3): imbalance ratio is 0.3119
+[20:16:53.072622] 
+[20:16:53.072628] Found 191027 images in total, 76899 positive images, 114128 negative images
+[20:16:53.072634] Pleural Effusion(C4): imbalance ratio is 0.4026
+[20:16:53.072640] 
+[20:16:53.072718] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.085675] Multi-label mode: True, Number of classes: [5]
+[20:16:53.086396] Multi-label mode: True, Number of classes: [5]
+[20:16:53.086495] Multi-label mode: True, Number of classes: [5]
+[20:16:53.087079] ------------------------------
+[20:16:53.087102] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.087112] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.087119] 
+[20:16:53.087126] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.087134] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.087140] 
+[20:16:53.087147] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.087154] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.087160] 
+[20:16:53.087166] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.087173] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.087179] 
+[20:16:53.087186] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.087193] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.087198] 
+[20:16:53.087233] ------------------------------
+[20:16:53.087785] ------------------------------
+[20:16:53.087808] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.087818] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.087825] 
+[20:16:53.087832] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.087838] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.087845] 
+[20:16:53.087851] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.087857] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.087863] 
+[20:16:53.087870] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.087876] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.087882] 
+[20:16:53.087889] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.087896] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.087902] 
+[20:16:53.087903] ------------------------------
+[20:16:53.087927] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.087937] [20:16:53.087936] Cardiomegaly(C0): imbalance ratio is 0.3267------------------------------
+
+[20:16:53.087944] 
+[20:16:53.087951] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.087958] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.087965] 
+[20:16:53.087972] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.087979] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.087985] 
+[20:16:53.087991] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.087998] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.088004] 
+[20:16:53.088011] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.088018] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.088024] 
+[20:16:53.088057] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.092480] Multi-label mode: True, Number of classes: [5]
+[20:16:53.093030] Multi-label mode: True, Number of classes: [5]
+[20:16:53.093047] Multi-label mode: True, Number of classes: [5]
+[20:16:53.093217] ------------------------------
+[20:16:53.093253] Found 191027 images in total, 23385 positive images, 167642 negative images
+[20:16:53.093264] Cardiomegaly(C0): imbalance ratio is 0.1224
+[20:16:53.093271] 
+[20:16:53.093279] Found 191027 images in total, 61493 positive images, 129534 negative images
+[20:16:53.093286] Edema(C1): imbalance ratio is 0.3219
+[20:16:53.093291] 
+[20:16:53.093298] Found 191027 images in total, 12983 positive images, 178044 negative images
+[20:16:53.093305] Consolidation(C2): imbalance ratio is 0.0680
+[20:16:53.093311] 
+[20:16:53.093317] Found 191027 images in total, 59583 positive images, 131444 negative images
+[20:16:53.093324] Atelectasis(C3): imbalance ratio is 0.3119
+[20:16:53.093329] 
+[20:16:53.093337] Found 191027 images in total, 76899 positive images, 114128 negative images
+[20:16:53.093344] Pleural Effusion(C4): imbalance ratio is 0.4026
+[20:16:53.093350] 
+[20:16:53.093414] ------------------------------
+[20:16:53.093833] ------------------------------
+[20:16:53.093855] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.093864] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.093871] 
+[20:16:53.093879] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.093886] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.093892] 
+[20:16:53.093899] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.093906] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.093912] 
+[20:16:53.093919] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.093925] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.093931] 
+[20:16:53.093938] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.093945] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.093950] 
+[20:16:53.093979] ------------------------------
+[20:16:53.094021] Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x15541c8283d0>
+[20:16:53.094363] ------------------------------
+[20:16:53.094386] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.094396] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.094402] 
+[20:16:53.094396] ------------------------------
+[20:16:53.094410] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.094416] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.094418] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.094422] 
+[20:16:53.094427] [20:16:53.094429] Cardiomegaly(C0): imbalance ratio is 0.3267Found 202 images in total, 32 positive images, 170 negative images
+
+[20:16:53.094436] [20:16:53.094436] 
+Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.094443] [20:16:53.094444] 
+Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.094450] [20:16:53.094450] Found 202 images in total, 75 positive images, 127 negative imagesEdema(C1): imbalance ratio is 0.2079
+
+[20:16:53.094458] [20:16:53.094458] 
+Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.094464] [20:16:53.094464] Found 202 images in total, 32 positive images, 170 negative images
+
+[20:16:53.094471] [20:16:53.094471] Consolidation(C2): imbalance ratio is 0.1584Found 202 images in total, 64 positive images, 138 negative images
+
+[20:16:53.094478] [20:16:53.094479] 
+Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.094485] [20:16:53.094485] Found 202 images in total, 75 positive images, 127 negative images
+
+[20:16:53.094492] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.094498] 
+[20:16:53.094504] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.094511] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.094517] [20:16:53.094516] 
+------------------------------
+[20:16:53.094547] ------------------------------
+[20:16:53.094564] Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x1553fa667370>
+[20:16:53.094586] Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x1553ffc28310>
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.102471] Multi-label mode: True, Number of classes: [5]
+[20:16:53.103440] ------------------------------
+[20:16:53.103493] Found 191027 images in total, 23385 positive images, 167642 negative images
+[20:16:53.103505] Cardiomegaly(C0): imbalance ratio is 0.1224
+[20:16:53.103512] 
+[20:16:53.103520] Found 191027 images in total, 61493 positive images, 129534 negative images
+[20:16:53.103528] Edema(C1): imbalance ratio is 0.3219
+[20:16:53.103534] 
+[20:16:53.103541] Found 191027 images in total, 12983 positive images, 178044 negative images
+[20:16:53.103548] Consolidation(C2): imbalance ratio is 0.0680
+[20:16:53.103554] 
+[20:16:53.103561] Found 191027 images in total, 59583 positive images, 131444 negative images
+[20:16:53.103568] Atelectasis(C3): imbalance ratio is 0.3119
+[20:16:53.103574] 
+[20:16:53.103581] Found 191027 images in total, 76899 positive images, 114128 negative images
+[20:16:53.103588] Pleural Effusion(C4): imbalance ratio is 0.4026
+[20:16:53.103594] 
+[20:16:53.103681] ------------------------------
+[20:16:53.103889] ------------------------------
+[20:16:53.103912] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.103921] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.103928] 
+[20:16:53.103936] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.103943] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.103950] 
+[20:16:53.103957] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.103963] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.103970] 
+[20:16:53.103976] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.103982] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.103988] 
+[20:16:53.103995] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.104001] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.104007] 
+[20:16:53.104039] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.107075] ------------------------------
+[20:16:53.107128] Found 191027 images in total, 23385 positive images, 167642 negative images
+[20:16:53.107140] Cardiomegaly(C0): imbalance ratio is 0.1224
+[20:16:53.107146] 
+[20:16:53.107154] Found 191027 images in total, 61493 positive images, 129534 negative images
+[20:16:53.107160] Edema(C1): imbalance ratio is 0.3219
+[20:16:53.107166] 
+[20:16:53.107173] Found 191027 images in total, 12983 positive images, 178044 negative images
+[20:16:53.107180] Consolidation(C2): imbalance ratio is 0.0680
+[20:16:53.107186] 
+[20:16:53.107192] Found 191027 images in total, 59583 positive images, 131444 negative images
+[20:16:53.107199] Atelectasis(C3): imbalance ratio is 0.3119
+[20:16:53.107205] 
+[20:16:53.107211] Found 191027 images in total, 76899 positive images, 114128 negative images
+[20:16:53.107218] Pleural Effusion(C4): imbalance ratio is 0.4026
+[20:16:53.107224] 
+[20:16:53.107314] ------------------------------
+[20:16:53.108949] Multi-label mode: True, Number of classes: [5]
+[20:16:53.110281] ------------------------------
+[20:16:53.110302] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.110311] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.110318] 
+[20:16:53.110330] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.110338] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.110344] 
+[20:16:53.110350] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.110357] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.110363] 
+[20:16:53.110369] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.110376] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.110382] 
+[20:16:53.110389] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.110396] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.110401] 
+[20:16:53.110429] ------------------------------
+[20:16:53.110466] Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x1553ffc28370>
+[20:16:53.110774] ------------------------------
+[20:16:53.110816] Found 191027 images in total, 23385 positive images, 167642 negative images
+[20:16:53.110829] Cardiomegaly(C0): imbalance ratio is 0.1224
+[20:16:53.110836] 
+[20:16:53.110845] Found 191027 images in total, 61493 positive images, 129534 negative images
+[20:16:53.110852] Edema(C1): imbalance ratio is 0.3219
+[20:16:53.110859] 
+[20:16:53.110865] Found 191027 images in total, 12983 positive images, 178044 negative images
+[20:16:53.110872] Consolidation(C2): imbalance ratio is 0.0680
+[20:16:53.110878] 
+[20:16:53.110885] Found 191027 images in total, 59583 positive images, 131444 negative images
+[20:16:53.110892] Atelectasis(C3): imbalance ratio is 0.3119
+[20:16:53.110898] 
+[20:16:53.110906] Found 191027 images in total, 76899 positive images, 114128 negative images
+[20:16:53.110912] Pleural Effusion(C4): imbalance ratio is 0.4026
+[20:16:53.110918] 
+[20:16:53.110991] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.113981] ------------------------------
+[20:16:53.114033] Found 191027 images in total, 23385 positive images, 167642 negative images
+[20:16:53.114045] Cardiomegaly(C0): imbalance ratio is 0.1224
+[20:16:53.114051] 
+[20:16:53.114059] Found 191027 images in total, 61493 positive images, 129534 negative images
+[20:16:53.114065] Edema(C1): imbalance ratio is 0.3219
+[20:16:53.114070] 
+[20:16:53.114077] Found 191027 images in total, 12983 positive images, 178044 negative images
+[20:16:53.114083] Consolidation(C2): imbalance ratio is 0.0680
+[20:16:53.114089] 
+[20:16:53.114096] Found 191027 images in total, 59583 positive images, 131444 negative images
+[20:16:53.114104] Atelectasis(C3): imbalance ratio is 0.3119
+[20:16:53.114110] 
+[20:16:53.114117] Found 191027 images in total, 76899 positive images, 114128 negative images
+[20:16:53.114123] Pleural Effusion(C4): imbalance ratio is 0.4026
+[20:16:53.114129] 
+[20:16:53.114214] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+[20:16:53.114609] ------------------------------
+[20:16:53.114655] Found 191027 images in total, 23385 positive images, 167642 negative images
+[20:16:53.114668] Cardiomegaly(C0): imbalance ratio is 0.1224
+[20:16:53.114675] 
+[20:16:53.114683] Found 191027 images in total, 61493 positive images, 129534 negative images
+[20:16:53.114691] Edema(C1): imbalance ratio is 0.3219
+[20:16:53.114697] 
+[20:16:53.114704] Found 191027 images in total, 12983 positive images, 178044 negative images
+[20:16:53.114711] Consolidation(C2): imbalance ratio is 0.0680
+[20:16:53.114718] 
+[20:16:53.114724] Found 191027 images in total, 59583 positive images, 131444 negative images
+[20:16:53.114731] Atelectasis(C3): imbalance ratio is 0.3119
+[20:16:53.114737] 
+[20:16:53.114744] Found 191027 images in total, 76899 positive images, 114128 negative images
+[20:16:53.114737] Multi-label mode: True, Number of classes: [5]
+[20:16:53.114751] Pleural Effusion(C4): imbalance ratio is 0.4026
+[20:16:53.114757] 
+[20:16:53.114832] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.116188] ------------------------------
+[20:16:53.116212] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.116222] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.116229] 
+[20:16:53.116236] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.116243] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.116249] 
+[20:16:53.116256] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.116262] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.116268] 
+[20:16:53.116275] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.116281] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.116288] 
+[20:16:53.116294] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.116301] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.116307] 
+[20:16:53.116341] ------------------------------
+[20:16:53.117189] Multi-label mode: True, Number of classes: [5]
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+[20:16:53.118638] ------------------------------
+[20:16:53.118661] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.118671] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.118677] 
+[20:16:53.118684] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.118691] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.118696] 
+[20:16:53.118703] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.118709] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.118714] 
+[20:16:53.118720] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.118727] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.118733] 
+[20:16:53.118739] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.118746] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.118751] 
+[20:16:53.118783] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+[20:16:53.120857] Multi-label mode: True, Number of classes: [5]
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+[20:16:53.121537] Multi-label mode: True, Number of classes: [5]
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.122267] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.122290] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.122299] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.122306] 
+[20:16:53.122313] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.122320] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.122326] 
+[20:16:53.122332] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.122338] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.122344] 
+[20:16:53.122350] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.122356] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.122362] 
+[20:16:53.122368] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.122374] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.122380] 
+[20:16:53.122413] ------------------------------
+[20:16:53.122892] ------------------------------
+[20:16:53.122915] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.122924] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.122931] 
+[20:16:53.122938] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.122945] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.122952] 
+[20:16:53.122959] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.122965] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.122971] 
+[20:16:53.122978] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.122985] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.122991] 
+[20:16:53.122998] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.123004] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.123010] 
+[20:16:53.123039] ------------------------------
+[20:16:53.123084] Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x1553ffc283a0>
+[20:16:53.123349] Multi-label mode: True, Number of classes: [5]
+[20:16:53.124077] Multi-label mode: True, Number of classes: [5]
+[20:16:53.124185] Multi-label mode: True, Number of classes: [5]
+[20:16:53.124493] ------------------------------
+[20:16:53.124530] Found 191027 images in total, 23385 positive images, 167642 negative images
+[20:16:53.124541] Cardiomegaly(C0): imbalance ratio is 0.1224
+[20:16:53.124548] 
+[20:16:53.124556] Found 191027 images in total, 61493 positive images, 129534 negative images
+[20:16:53.124563] Edema(C1): imbalance ratio is 0.3219
+[20:16:53.124569] 
+[20:16:53.124576] Found 191027 images in total, 12983 positive images, 178044 negative images
+[20:16:53.124582] Consolidation(C2): imbalance ratio is 0.0680
+[20:16:53.124588] 
+[20:16:53.124595] Found 191027 images in total, 59583 positive images, 131444 negative images
+[20:16:53.124602] Atelectasis(C3): imbalance ratio is 0.3119
+[20:16:53.124608] 
+[20:16:53.124615] Found 191027 images in total, 76899 positive images, 114128 negative images
+[20:16:53.124622] Pleural Effusion(C4): imbalance ratio is 0.4026
+[20:16:53.124628] 
+[20:16:53.124693] ------------------------------
+[20:16:53.124745] ------------------------------
+[20:16:53.124767] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.124777] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.124784] 
+[20:16:53.124792] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.124798] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.124804] 
+[20:16:53.124810] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.124816] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.124823] 
+[20:16:53.124829] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.124836] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.124843] 
+[20:16:53.124850] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.124856] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.124862] 
+[20:16:53.124895] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+[20:16:53.125425] ------------------------------
+[20:16:53.125447] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.125457] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.125463] 
+[20:16:53.125471] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.125478] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.125484] 
+[20:16:53.125490] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.125497] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.125503] 
+[20:16:53.125509] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.125515] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.125521] 
+[20:16:53.125527] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.125533] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.125539] 
+[20:16:53.125623] ------------------------------
+[20:16:53.125566] ------------------------------
+[20:16:53.125607] Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x1553ffc293a0>
+[20:16:53.125647] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.125657] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.125663] 
+[20:16:53.125670] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.125676] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.125682] 
+[20:16:53.125689] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.125695] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.125701] 
+[20:16:53.125707] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.125713] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.125719] 
+[20:16:53.125725] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.125731] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.125738] 
+[20:16:53.125775] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+[20:16:53.127741] ------------------------------
+[20:16:53.127782] Found 191027 images in total, 23385 positive images, 167642 negative images
+[20:16:53.127793] Cardiomegaly(C0): imbalance ratio is 0.1224
+[20:16:53.127800] 
+[20:16:53.127808] Found 191027 images in total, 61493 positive images, 129534 negative images
+[20:16:53.127815] Edema(C1): imbalance ratio is 0.3219
+[20:16:53.127821] 
+[20:16:53.127827] Found 191027 images in total, 12983 positive images, 178044 negative images
+[20:16:53.127834] Consolidation(C2): imbalance ratio is 0.0680
+[20:16:53.127841] 
+[20:16:53.127848] Found 191027 images in total, 59583 positive images, 131444 negative images
+[20:16:53.127855] Atelectasis(C3): imbalance ratio is 0.3119
+[20:16:53.127861] 
+[20:16:53.127867] Found 191027 images in total, 76899 positive images, 114128 negative images
+[20:16:53.127874] Pleural Effusion(C4): imbalance ratio is 0.4026
+[20:16:53.127880] 
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.127906] Multi-label mode: True, Number of classes: [5]
+[20:16:53.127948] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.129274] ------------------------------
+[20:16:53.129296] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.129306] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.129313] 
+[20:16:53.129320] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.129327] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.129333] 
+[20:16:53.129339] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.129346] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.129352] 
+[20:16:53.129359] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.129366] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.129372] 
+[20:16:53.129378] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.129385] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.129391] 
+[20:16:53.129420] ------------------------------
+[20:16:53.129460] Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x1553ffc283a0>
+[20:16:53.129857] Multi-label mode: True, Number of classes: [5]
+[20:16:53.130956] Multi-label mode: True, Number of classes: [5]
+[20:16:53.131204] ------------------------------
+[20:16:53.131225] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.131235] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.131242] 
+[20:16:53.131249] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.131256] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.131261] 
+[20:16:53.131268] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.131275] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.131280] 
+[20:16:53.131286] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.131293] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.131299] 
+[20:16:53.131305] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.131312] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.131318] 
+[20:16:53.131347] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+[20:16:53.131387] Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x1553ffc28370>
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.132322] ------------------------------
+[20:16:53.132343] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.132353] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.132360] 
+[20:16:53.132367] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.132374] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.132381] 
+[20:16:53.132388] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.132394] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.132400] 
+[20:16:53.132406] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.132412] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.132418] 
+[20:16:53.132424] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.132430] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.132436] 
+[20:16:53.132466] ------------------------------
+[20:16:53.132508] Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x1553ffc28370>
+[20:16:53.133375] ------------------------------
+[20:16:53.133412] Found 191027 images in total, 23385 positive images, 167642 negative images
+[20:16:53.133423] Cardiomegaly(C0): imbalance ratio is 0.1224
+[20:16:53.133430] 
+[20:16:53.133438] Found 191027 images in total, 61493 positive images, 129534 negative images
+[20:16:53.133446] Edema(C1): imbalance ratio is 0.3219
+[20:16:53.133452] 
+[20:16:53.133458] Found 191027 images in total, 12983 positive images, 178044 negative images
+[20:16:53.133465] Consolidation(C2): imbalance ratio is 0.0680
+[20:16:53.133472] 
+[20:16:53.133479] Found 191027 images in total, 59583 positive images, 131444 negative images
+[20:16:53.133486] Atelectasis(C3): imbalance ratio is 0.3119
+[20:16:53.133492] 
+[20:16:53.133499] Found 191027 images in total, 76899 positive images, 114128 negative images
+[20:16:53.133506] Pleural Effusion(C4): imbalance ratio is 0.4026
+[20:16:53.133512] 
+[20:16:53.133596] ------------------------------
+[20:16:53.134045] Multi-label mode: True, Number of classes: [5]
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+[20:16:53.135469] ------------------------------
+[20:16:53.135492] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.135501] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.135507] 
+[20:16:53.135514] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.135521] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.135526] 
+[20:16:53.135532] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.135538] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.135544] 
+[20:16:53.135550] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.135556] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.135562] 
+[20:16:53.135568] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.135575] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.135581] 
+[20:16:53.135616] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.137708] Multi-label mode: True, Number of classes: [5]
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.139134] ------------------------------
+[20:16:53.139157] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.139167] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.139173] 
+[20:16:53.139180] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.139188] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.139194] 
+[20:16:53.139200] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.139207] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.139214] 
+[20:16:53.139220] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.139227] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.139233] 
+[20:16:53.139240] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.139247] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.139254] 
+[20:16:53.139287] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+[20:16:53.140731] Multi-label mode: True, Number of classes: [5]
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.142089] ------------------------------
+[20:16:53.142112] Found 202 images in total, 66 positive images, 136 negative images
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+[20:16:53.142123] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.142130] 
+[20:16:53.142137] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.142144] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.142151] 
+[20:16:53.142158] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.142164] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.142171] 
+[20:16:53.142177] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.142184] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.142190] 
+[20:16:53.142196] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.142203] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.142209] 
+[20:16:53.142240] ------------------------------
+[20:16:53.142285] Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x1553fa828340>
+[20:16:53.142574] ------------------------------
+[20:16:53.142640] Found 191027 images in total, 23385 positive images, 167642 negative images
+[20:16:53.142654] Cardiomegaly(C0): imbalance ratio is 0.1224
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.142661] 
+[20:16:53.142669] Found 191027 images in total, 61493 positive images, 129534 negative images
+[20:16:53.142675] Edema(C1): imbalance ratio is 0.3219
+[20:16:53.142681] 
+[20:16:53.142687] Found 191027 images in total, 12983 positive images, 178044 negative images
+[20:16:53.142695] Consolidation(C2): imbalance ratio is 0.0680
+[20:16:53.142701] 
+[20:16:53.142708] Found 191027 images in total, 59583 positive images, 131444 negative images
+[20:16:53.142715] Atelectasis(C3): imbalance ratio is 0.3119
+[20:16:53.142721] 
+[20:16:53.142728] Found 191027 images in total, 76899 positive images, 114128 negative images
+[20:16:53.142735] Pleural Effusion(C4): imbalance ratio is 0.4026
+[20:16:53.142741] 
+[20:16:53.143024] Multi-label mode: True, Number of classes: [5]
+[20:16:53.142844] ------------------------------
+[20:16:53.144453] ------------------------------
+[20:16:53.144475] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.144485] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.144492] 
+[20:16:53.144499] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.144506] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.144512] 
+[20:16:53.144519] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.144525] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.144532] 
+[20:16:53.144539] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.144545] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.144551] 
+[20:16:53.144558] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.144565] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.144571] 
+[20:16:53.144605] ------------------------------
+[20:16:53.144718] Multi-label mode: True, Number of classes: [5]
+[20:16:53.146063] ------------------------------
+[20:16:53.146085] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.146094] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.146101] 
+[20:16:53.146108] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.146114] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.146120] 
+[20:16:53.146126] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.146132] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.146138] 
+[20:16:53.146144] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.146150] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.146156] 
+[20:16:53.146162] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.146169] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.146176] 
+[20:16:53.146204] ------------------------------
+[20:16:53.146248] Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x1553ffc283a0>
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.148547] ------------------------------
+[20:16:53.148600] Found 191027 images in total, 23385 positive images, 167642 negative images
+[20:16:53.148612] Cardiomegaly(C0): imbalance ratio is 0.1224
+[20:16:53.148619] 
+[20:16:53.148627] Found 191027 images in total, 61493 positive images, 129534 negative images
+[20:16:53.148634] Edema(C1): imbalance ratio is 0.3219
+[20:16:53.148640] 
+[20:16:53.148647] Found 191027 images in total, 12983 positive images, 178044 negative images
+[20:16:53.148654] Consolidation(C2): imbalance ratio is 0.0680
+[20:16:53.148660] 
+[20:16:53.148667] Found 191027 images in total, 59583 positive images, 131444 negative images
+[20:16:53.148674] Atelectasis(C3): imbalance ratio is 0.3119
+[20:16:53.148680] 
+[20:16:53.148688] Found 191027 images in total, 76899 positive images, 114128 negative images
+[20:16:53.148694] Pleural Effusion(C4): imbalance ratio is 0.4026
+[20:16:53.148701] 
+[20:16:53.148797] ------------------------------
+[20:16:53.149781] Multi-label mode: True, Number of classes: [5]
+[20:16:53.151153] ------------------------------
+[20:16:53.151175] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.151185] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.151191] 
+[20:16:53.151198] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.151205] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.151211] 
+[20:16:53.151218] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.151225] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.151232] 
+[20:16:53.151238] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.151245] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.151251] 
+[20:16:53.151258] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.151264] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.151270] 
+[20:16:53.151298] ------------------------------
+[20:16:53.151344] Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x15541fc29370>
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+[20:16:53.152481] ------------------------------
+[20:16:53.152527] Found 191027 images in total, 23385 positive images, 167642 negative images
+[20:16:53.152540] Cardiomegaly(C0): imbalance ratio is 0.1224
+[20:16:53.152547] 
+[20:16:53.152555] Found 191027 images in total, 61493 positive images, 129534 negative images
+[20:16:53.152562] Edema(C1): imbalance ratio is 0.3219
+[20:16:53.152568] 
+[20:16:53.152575] Found 191027 images in total, 12983 positive images, 178044 negative images
+[20:16:53.152582] Consolidation(C2): imbalance ratio is 0.0680
+[20:16:53.152588] 
+[20:16:53.152595] Found 191027 images in total, 59583 positive images, 131444 negative images
+[20:16:53.152601] Atelectasis(C3): imbalance ratio is 0.3119
+[20:16:53.152607] 
+[20:16:53.152615] Found 191027 images in total, 76899 positive images, 114128 negative images
+[20:16:53.152621] Pleural Effusion(C4): imbalance ratio is 0.4026
+[20:16:53.152628] 
+[20:16:53.152702] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.154864] Multi-label mode: True, Number of classes: [5]
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+[20:16:53.156369] ------------------------------
+[20:16:53.156393] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.156403] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.156409] 
+[20:16:53.156416] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.156422] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.156428] 
+[20:16:53.156434] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.156440] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.156446] 
+[20:16:53.156452] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.156458] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.156465] 
+[20:16:53.156471] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.156478] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.156484] 
+[20:16:53.156518] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.158499] Multi-label mode: True, Number of classes: [5]
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.159974] ------------------------------
+[20:16:53.159998] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.160008] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.160015] 
+[20:16:53.160022] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.160030] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.160035] 
+[20:16:53.160042] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.160048] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.160054] 
+[20:16:53.160060] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.160066] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.160072] 
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.160078] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.160085] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.160091] 
+[20:16:53.160124] ------------------------------
+[20:16:53.161771] Multi-label mode: True, Number of classes: [5]
+[20:16:53.161972] Multi-label mode: True, Number of classes: [5]
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+[20:16:53.163158] ------------------------------
+[20:16:53.163180] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.163189] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.163196] 
+[20:16:53.163202] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.163209] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.163215] 
+[20:16:53.163221] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.163227] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.163232] 
+[20:16:53.163238] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.163245] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.163251] 
+[20:16:53.163257] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.163263] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.163269] 
+[20:16:53.163298] ------------------------------
+[20:16:53.163346] Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x1553fe8283a0>
+[20:16:53.163397] ------------------------------
+[20:16:53.163419] Found 202 images in total, 66 positive images, 136 negative images
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.163429] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.163435] 
+[20:16:53.163442] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.163449] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.163455] 
+[20:16:53.163461] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.163468] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.163474] 
+[20:16:53.163481] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.163488] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.163493] 
+[20:16:53.163500] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.163506] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.163513] 
+[20:16:53.163546] ------------------------------
+[20:16:53.165257] Multi-label mode: True, Number of classes: [5]
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+[20:16:53.166655] ------------------------------
+[20:16:53.166677] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.166687] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.166694] 
+[20:16:53.166701] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.166709] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.166716] 
+[20:16:53.166723] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.166730] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.166737] 
+[20:16:53.166743] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.166751] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.166758] 
+[20:16:53.166765] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.166772] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.166779] 
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.166808] ------------------------------
+[20:16:53.166855] Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x1553fa828370>
+[20:16:53.168594] Multi-label mode: True, Number of classes: [5]
+[20:16:53.169932] ------------------------------
+[20:16:53.169953] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.169962] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.169968] 
+[20:16:53.169976] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.169983] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.169989] 
+[20:16:53.169996] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.170003] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.170009] 
+[20:16:53.170016] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.170023] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.170029] 
+[20:16:53.170036] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.170042] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.170048] 
+[20:16:53.170077] ------------------------------
+[20:16:53.170121] Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x1553ffc283d0>
+[20:16:53.173438] ------------------------------
+[20:16:53.173509] Found 191027 images in total, 23385 positive images, 167642 negative images
+[20:16:53.173524] Cardiomegaly(C0): imbalance ratio is 0.1224
+[20:16:53.173532] 
+[20:16:53.173539] Found 191027 images in total, 61493 positive images, 129534 negative images
+[20:16:53.173547] Edema(C1): imbalance ratio is 0.3219
+[20:16:53.173553] 
+[20:16:53.173560] Found 191027 images in total, 12983 positive images, 178044 negative images
+[20:16:53.173567] Consolidation(C2): imbalance ratio is 0.0680
+[20:16:53.173574] 
+[20:16:53.173581] Found 191027 images in total, 59583 positive images, 131444 negative images
+[20:16:53.173588] Atelectasis(C3): imbalance ratio is 0.3119
+[20:16:53.173594] 
+[20:16:53.173601] Found 191027 images in total, 76899 positive images, 114128 negative images
+[20:16:53.173608] Pleural Effusion(C4): imbalance ratio is 0.4026
+[20:16:53.173613] 
+[20:16:53.173728] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.183251] Multi-label mode: True, Number of classes: [5]
+[20:16:53.184713] ------------------------------
+[20:16:53.184736] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.184745] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.184752] 
+[20:16:53.184759] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.184766] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.184773] 
+[20:16:53.184779] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.184786] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.184792] 
+[20:16:53.184799] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.184806] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.184812] 
+[20:16:53.184820] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.184826] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.184833] 
+[20:16:53.184867] ------------------------------
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:95: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0-small/', '')
+/mnt/home/mpaez/cvii-final/med_mae/util/dataloader_medical.py:96: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df['Path'] = self.df['Path'].str.replace('CheXpert-v1.0/', '')
+[20:16:53.190040] Multi-label mode: True, Number of classes: [5]
+[20:16:53.191399] ------------------------------
+[20:16:53.191422] Found 202 images in total, 66 positive images, 136 negative images
+[20:16:53.191431] Cardiomegaly(C0): imbalance ratio is 0.3267
+[20:16:53.191437] 
+[20:16:53.191444] Found 202 images in total, 42 positive images, 160 negative images
+[20:16:53.191451] Edema(C1): imbalance ratio is 0.2079
+[20:16:53.191457] 
+[20:16:53.191463] Found 202 images in total, 32 positive images, 170 negative images
+[20:16:53.191469] Consolidation(C2): imbalance ratio is 0.1584
+[20:16:53.191475] 
+[20:16:53.191481] Found 202 images in total, 75 positive images, 127 negative images
+[20:16:53.191487] Atelectasis(C3): imbalance ratio is 0.3713
+[20:16:53.191493] 
+[20:16:53.191500] Found 202 images in total, 64 positive images, 138 negative images
+[20:16:53.191506] Pleural Effusion(C4): imbalance ratio is 0.3168
+[20:16:53.191512] 
+[20:16:53.191540] ------------------------------
+[20:16:53.191598] Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x1553ffc283d0>
+[20:16:53.371375] Model = VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): ModuleList(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1-11): 11 x Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=5, bias=True)
+  (fc_norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+[20:16:53.371409] number of params (M): 21.67
+[20:16:53.371422] base lr: 2.50e-04
+[20:16:53.371429] actual lr: 5.00e-04
+[20:16:53.371435] accumulate grad iterations: 1
+[20:16:53.371441] effective batch size: 512
+[20:16:53.373940] Model = VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): ModuleList(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1-11): 11 x Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=5, bias=True)
+  (fc_norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+[20:16:53.373964] number of params (M): 21.67
+[20:16:53.373977] base lr: 2.50e-04
+[20:16:53.373985] actual lr: 5.00e-04
+[20:16:53.373991] accumulate grad iterations: 1
+[20:16:53.373997] effective batch size: 512
+[20:16:53.379970] Model = VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): ModuleList(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1-11): 11 x Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=5, bias=True)
+  (fc_norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+[20:16:53.380009] number of params (M): 21.67
+[20:16:53.380023] base lr: 2.50e-04
+[20:16:53.380030] actual lr: 5.00e-04
+[20:16:53.380036] accumulate grad iterations: 1
+[20:16:53.380042] effective batch size: 512
+[20:16:53.381647] Model = VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): ModuleList(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1-11): 11 x Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=5, bias=True)
+  (fc_norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+[20:16:53.381672] number of params (M): 21.67
+[20:16:53.381685] base lr: 2.50e-04
+[20:16:53.381692] actual lr: 5.00e-04
+[20:16:53.381698] accumulate grad iterations: 1
+[20:16:53.381704] effective batch size: 512
+[20:16:53.393635] Model = VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): ModuleList(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1-11): 11 x Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=5, bias=True)
+  (fc_norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+[20:16:53.393668] number of params (M): 21.67
+[20:16:53.393682] base lr: 2.50e-04
+[20:16:53.393689] actual lr: 5.00e-04
+[20:16:53.393695] accumulate grad iterations: 1
+[20:16:53.393701] effective batch size: 512
+[20:16:53.401194] Model = VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): ModuleList(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1-11): 11 x Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=5, bias=True)
+  (fc_norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+[20:16:53.401228] number of params (M): 21.67
+[20:16:53.401241] base lr: 2.50e-04
+[20:16:53.401248] actual lr: 5.00e-04
+[20:16:53.401254] accumulate grad iterations: 1
+[20:16:53.401266] effective batch size: 512
+[20:16:53.405193] Model = VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): ModuleList(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1-11): 11 x Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=5, bias=True)
+  (fc_norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+[20:16:53.405229] number of params (M): 21.67
+[20:16:53.405244] base lr: 2.50e-04
+[20:16:53.405251] actual lr: 5.00e-04
+[20:16:53.405257] accumulate grad iterations: 1
+[20:16:53.405263] effective batch size: 512
+[20:16:53.411102] Model = VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): ModuleList(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1-11): 11 x Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=5, bias=True)
+  (fc_norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+[20:16:53.411129] number of params (M): 21.67
+[20:16:53.411143] base lr: 2.50e-04
+[20:16:53.411150] actual lr: 5.00e-04
+[20:16:53.411156] accumulate grad iterations: 1
+[20:16:53.411163] effective batch size: 512
+[20:16:53.414887] Model = VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): ModuleList(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1-11): 11 x Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=5, bias=True)
+  (fc_norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+[20:16:53.414913] number of params (M): 21.67
+[20:16:53.414926] base lr: 2.50e-04
+[20:16:53.414933] actual lr: 5.00e-04
+[20:16:53.414939] accumulate grad iterations: 1
+[20:16:53.414945] effective batch size: 512
+[20:16:53.417401] Model = VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): ModuleList(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1-11): 11 x Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=5, bias=True)
+  (fc_norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+[20:16:53.417428] number of params (M): 21.67
+[20:16:53.417441] base lr: 2.50e-04
+[20:16:53.417448] actual lr: 5.00e-04
+[20:16:53.417454] accumulate grad iterations: 1
+[20:16:53.417461] effective batch size: 512
+[20:16:53.417841] Model = VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): ModuleList(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1-11): 11 x Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=5, bias=True)
+  (fc_norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+[20:16:53.417867] number of params (M): 21.67
+[20:16:53.417880] base lr: 2.50e-04
+[20:16:53.417887] actual lr: 5.00e-04
+[20:16:53.417894] accumulate grad iterations: 1
+[20:16:53.417900] effective batch size: 512
+[20:16:53.420887] Model = VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): ModuleList(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1-11): 11 x Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=5, bias=True)
+  (fc_norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+[20:16:53.420915] number of params (M): 21.67
+[20:16:53.420929] base lr: 2.50e-04
+[20:16:53.420936] actual lr: 5.00e-04
+[20:16:53.420943] accumulate grad iterations: 1
+[20:16:53.420950] effective batch size: 512
+[20:16:53.445245] Model = VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): ModuleList(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1-11): 11 x Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=5, bias=True)
+  (fc_norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+[20:16:53.445284] number of params (M): 21.67
+[20:16:53.445298] base lr: 2.50e-04
+[20:16:53.445305] actual lr: 5.00e-04
+[20:16:53.445311] accumulate grad iterations: 1
+[20:16:53.445317] effective batch size: 512
+[20:16:53.461853] Model = VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): ModuleList(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1-11): 11 x Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=5, bias=True)
+  (fc_norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+[20:16:53.461888] number of params (M): 21.67
+[20:16:53.461901] base lr: 2.50e-04
+[20:16:53.461908] actual lr: 5.00e-04
+[20:16:53.461915] accumulate grad iterations: 1
+[20:16:53.461921] effective batch size: 512
+[20:16:53.462906] Model = VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): ModuleList(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1-11): 11 x Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=5, bias=True)
+  (fc_norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+[20:16:53.462938] number of params (M): 21.67
+[20:16:53.462952] base lr: 2.50e-04
+[20:16:53.462958] actual lr: 5.00e-04
+[20:16:53.462965] accumulate grad iterations: 1
+[20:16:53.462971] effective batch size: 512
+[20:16:53.463176] Model = VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): ModuleList(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1-11): 11 x Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MaskedAttention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=5, bias=True)
+  (fc_norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+[20:16:53.463202] number of params (M): 21.67
+[20:16:53.463216] base lr: 2.50e-04
+[20:16:53.463224] actual lr: 5.00e-04
+[20:16:53.463231] accumulate grad iterations: 1
+[20:16:53.463237] effective batch size: 512
+[20:16:53.474265] criterion = CrossEntropyLoss()
+[20:16:53.474558] criterion = CrossEntropyLoss()
+[20:16:53.474564] criterion = CrossEntropyLoss()
+[20:16:53.474506] criterion = CrossEntropyLoss()
+[20:16:53.474774] criterion = CrossEntropyLoss()
+[20:16:53.474827] criterion = CrossEntropyLoss()
+[20:16:53.474771] criterion = CrossEntropyLoss()
+[20:16:53.474846] criterion = CrossEntropyLoss()
+[20:16:53.474853] criterion = CrossEntropyLoss()
+[20:16:53.475027] criterion = CrossEntropyLoss()
+[20:16:53.474906] criterion = CrossEntropyLoss()
+[20:16:53.474932] criterion = CrossEntropyLoss()
+[20:16:53.475032] criterion = CrossEntropyLoss()
+[20:16:53.475130] criterion = CrossEntropyLoss()
+[20:16:53.475167] criterion = CrossEntropyLoss()
+[20:16:53.475421] criterion = CrossEntropyLoss()
+[20:16:53.940579] Resume checkpoint finetuned_baseline_small_chexpert_50epoch.pth
+[20:16:53.940805] Resume checkpoint finetuned_baseline_small_chexpert_50epoch.pth
+[20:16:53.941604] Resume checkpoint finetuned_baseline_small_chexpert_50epoch.pth
+[20:16:53.944632] Resume checkpoint finetuned_baseline_small_chexpert_50epoch.pth
+[20:16:53.945122] Resume checkpoint finetuned_baseline_small_chexpert_50epoch.pth
+[20:16:53.945196] Resume checkpoint finetuned_baseline_small_chexpert_50epoch.pth
+[20:16:53.945403] Resume checkpoint finetuned_baseline_small_chexpert_50epoch.pth
+[20:16:53.946960] Resume checkpoint finetuned_baseline_small_chexpert_50epoch.pth
+[20:16:53.950767] Resume checkpoint finetuned_baseline_small_chexpert_50epoch.pth
+[20:16:53.951227] Resume checkpoint finetuned_baseline_small_chexpert_50epoch.pth
+[20:16:53.951316] Resume checkpoint finetuned_baseline_small_chexpert_50epoch.pth
+[20:16:53.956175] Resume checkpoint finetuned_baseline_small_chexpert_50epoch.pth
+[20:16:53.956039] Resume checkpoint finetuned_baseline_small_chexpert_50epoch.pth
+[20:16:53.956278] Resume checkpoint finetuned_baseline_small_chexpert_50epoch.pth
+[20:16:53.956593] Resume checkpoint finetuned_baseline_small_chexpert_50epoch.pth
+[20:16:53.956844] Resume checkpoint finetuned_baseline_small_chexpert_50epoch.pth
+[20:17:01.266615] Test:  [0/7]  eta: 0:00:51  loss: 0.7957 (0.7957)  time: 7.3087  data: 6.7169  max mem: 337
+[20:17:01.266786] Test:  [0/7]  eta: 0:00:51  loss: 0.8632 (0.8632)  time: 7.3084  data: 6.6846  max mem: 337
+[20:17:01.278190] Test:  [0/7]  eta: 0:00:51  loss: 0.7545 (0.7545)  time: 7.3196  data: 6.6841  max mem: 337
+[20:17:01.286776] Test:  [0/7]  eta: 0:00:51  loss: 0.7841 (0.7841)  time: 7.3337  data: 6.7252  max mem: 337
+[20:17:01.291921] Test:  [0/7]  eta: 0:00:51  loss: 0.7460 (0.7460)  time: 7.3341  data: 6.7383  max mem: 337
+[20:17:01.323485] Test:  [0/7]  eta: 0:00:51  loss: 0.8073 (0.8073)  time: 7.3710  data: 6.7275  max mem: 337
+[20:17:01.334651] Test:  [0/7]  eta: 0:00:51  loss: 0.7505 (0.7505)  time: 7.3817  data: 6.7836  max mem: 337
+[20:17:01.342687] Test:  [0/7]  eta: 0:00:51  loss: 0.7086 (0.7086)  time: 7.3846  data: 6.7936  max mem: 337
+[20:17:01.471247] Test:  [0/7]  eta: 0:00:52  loss: 0.8435 (0.8435)  time: 7.5241  data: 6.8961  max mem: 337
+[20:17:01.482820] Test:  [0/7]  eta: 0:00:52  loss: 0.7849 (0.7849)  time: 7.5360  data: 6.9045  max mem: 337
+[20:17:01.489525] Test:  [0/7]  eta: 0:00:52  loss: 0.8281 (0.8281)  time: 7.5469  data: 6.9229  max mem: 337
+[20:17:01.496828] Test:  [0/7]  eta: 0:00:52  loss: 0.8059 (0.8059)  time: 7.5499  data: 6.9168  max mem: 337
+[20:17:01.521744] Test:  [0/7]  eta: 0:00:53  loss: 0.8248 (0.8248)  time: 7.5784  data: 6.9665  max mem: 337
+[20:17:01.535280] Test:  [0/7]  eta: 0:00:53  loss: 0.7451 (0.7451)  time: 7.5930  data: 6.9853  max mem: 337
+[20:17:01.544554] Test:  [0/7]  eta: 0:00:53  loss: 0.7636 (0.7636)  time: 7.5959  data: 6.9771  max mem: 337
+[20:17:01.548636] Test:  [0/7]  eta: 0:00:53  loss: 0.8579 (0.8579)  time: 7.6022  data: 6.9925  max mem: 337
+[20:17:02.013093] Test:  [6/7]  eta: 0:00:01  loss: 0.7686 (0.7537)  time: 1.1520  data: 1.0515  max mem: 337
+[20:17:02.014529] Test:  [6/7]  eta: 0:00:01  loss: 0.7644 (0.7404)  time: 1.1517  data: 1.0464  max mem: 337
+[20:17:02.016114] Test:  [6/7]  eta: 0:00:01  loss: 0.7493 (0.7520)  time: 1.1511  data: 1.0532  max mem: 337
+[20:17:02.020932] Test:  [6/7]  eta: 0:00:01  loss: 0.7541 (0.7385)  time: 1.1525  data: 1.0523  max mem: 337
+[20:17:02.026967] Test:  [6/7]  eta: 0:00:01  loss: 0.7210 (0.7425)  time: 1.1542  data: 1.0510  max mem: 337
+[20:17:02.028532] Test:  [6/7]  eta: 0:00:01  loss: 0.6755 (0.7338)  time: 1.1529  data: 1.0553  max mem: 337
+[20:17:02.029050] Test:  [6/7]  eta: 0:00:01  loss: 0.7407 (0.7521)  time: 1.1545  data: 1.0506  max mem: 337
+[20:17:02.029880] Test:  [6/7]  eta: 0:00:01  loss: 0.7043 (0.7394)  time: 1.1547  data: 1.0509  max mem: 337
+[20:17:02.037355] Test:  [6/7]  eta: 0:00:01  loss: 0.7462 (0.7500)  time: 1.1549  data: 1.0562  max mem: 337
+[20:17:02.037571] Test:  [6/7]  eta: 0:00:01  loss: 0.7501 (0.7375)  time: 1.1541  data: 1.0510  max mem: 337
+[20:17:02.038295] Test:  [6/7]  eta: 0:00:01  loss: 0.7064 (0.7534)  time: 1.1542  data: 1.0528  max mem: 337
+[20:17:02.041220] Test:  [6/7]  eta: 0:00:01  loss: 0.6720 (0.6836)  time: 1.1547  data: 1.0581  max mem: 337
+[20:17:02.049934] Test:  [6/7]  eta: 0:00:01  loss: 0.7430 (0.7427)  time: 1.1576  data: 1.0571  max mem: 337
+[20:17:02.089164] Test: Total time: 0:00:08 (1.1630 s / it)
+[20:17:02.093390] (202, 5) (202, 5)
+[20:17:02.099221] [0.6888368983957219, 0.877529761904762, 0.8407169117647058, 0.7600524934383203, 0.8825294384057971]
+[20:17:02.253075] Test:  [6/7]  eta: 0:00:01  loss: 0.7633 (0.7748)  time: 1.1870  data: 1.0543  max mem: 337
+[20:17:02.253864] Test:  [6/7]  eta: 0:00:01  loss: 0.6774 (0.7508)  time: 1.1873  data: 1.0530  max mem: 337
+[20:17:02.262970] Test:  [6/7]  eta: 0:00:01  loss: 0.7451 (0.7455)  time: 1.1886  data: 1.0572  max mem: 337
+[20:17:02.290081] Test: Total time: 0:00:08 (1.1904 s / it)
+[20:17:02.291693] Test: Total time: 0:00:08 (1.1913 s / it)
+[20:17:02.294274] (202, 5) (202, 5)
+[20:17:02.295603] (202, 5) (202, 5)
+[20:17:02.299601] Test: Total time: 0:00:08 (1.1925 s / it)
+[20:17:02.300150] [0.6827651515151517, 0.8877232142857142, 0.8607536764705882, 0.7749081364829397, 0.8911911231884058]
+[20:17:02.301301] [0.6976381461675579, 0.8955357142857142, 0.8459558823529412, 0.7755380577427822, 0.9033627717391304]
+[20:17:02.302124] Test: Total time: 0:00:08 (1.1929 s / it)
+[20:17:02.303505] (202, 5) (202, 5)
+[20:17:02.306135] (202, 5) (202, 5)
+[20:17:02.309183] [0.6827094474153297, 0.8877976190476191, 0.8441176470588235, 0.7699212598425197, 0.8924365942028986]
+[20:17:02.311855] [0.7046568627450981, 0.8813244047619048, 0.8557904411764706, 0.7564304461942258, 0.8949841485507247]
+[20:17:02.347292] Test: Total time: 0:00:08 (1.1985 s / it)
+[20:17:02.351622] [20:17:02.351628] (202, 5) (202, 5)
+Test: Total time: 0:00:08 (1.1991 s / it)
+[20:17:02.353214] Test: Total time: 0:00:08 (1.1994 s / it)
+[20:17:02.355854] (202, 5) (202, 5)
+[20:17:02.356854] Test: Total time: 0:00:08 (1.1999 s / it)
+[20:17:02.357408] (202, 5) (202, 5)
+[20:17:02.357557] [0.7064393939393939, 0.8875, 0.8488051470588236, 0.771968503937008, 0.8902853260869565]
+[20:17:02.360851] (202, 5) (202, 5)
+[20:17:02.361819] [0.6895610516934046, 0.8933035714285714, 0.8712316176470588, 0.7843044619422572, 0.8827558876811594]
+[20:17:02.362671] Test: Total time: 0:00:08 (1.2023 s / it)
+[20:17:02.363466] [0.6844919786096256, 0.8840029761904762, 0.8379595588235293, 0.797007874015748, 0.9102694746376812]
+[20:17:02.365718] Test: Total time: 0:00:08 (1.2028 s / it)
+[20:17:02.366825] (202, 5) (202, 5)
+[20:17:02.366844] [0.7345142602495545, 0.8886904761904761, 0.8387867647058823, 0.7651443569553806, 0.9172894021739131]
+[20:17:02.369885] (202, 5) (202, 5)
+[20:17:02.371343] Test: Total time: 0:00:08 (1.2036 s / it)
+[20:17:02.372552] [0.6985851158645275, 0.8816220238095238, 0.8715073529411764, 0.7575328083989501, 0.895210597826087]
+[20:17:02.375344] (202, 5) (202, 5)
+[20:17:02.375607] [0.6970254010695187, 0.8903273809523808, 0.8596507352941176, 0.7711286089238846, 0.9059103260869564]
+[20:17:02.378017] Test: Total time: 0:00:08 (1.2046 s / it)
+[20:17:02.381000] [0.7131238859180036, 0.8727678571428571, 0.8802389705882354, 0.78750656167979, 0.8803215579710144]
+[20:17:02.382189] (202, 5) (202, 5)
+[20:17:02.387886] [0.7062722816399286, 0.8843005952380951, 0.8444852941176471, 0.7837795275590551, 0.8700747282608695]
+[20:17:02.487514] Test: Total time: 0:00:08 (1.2208 s / it)
+[20:17:02.490904] Test: Total time: 0:00:08 (1.2213 s / it)
+[20:17:02.491314] Test: Total time: 0:00:08 (1.2212 s / it)
+[20:17:02.491672] (202, 5) (202, 5)
+[20:17:02.495097] (202, 5) (202, 5)
+[20:17:02.495455] (202, 5) (202, 5)
+[20:17:02.497476] [0.7060494652406417, 0.9028273809523809, 0.8370404411764706, 0.7688188976377952, 0.8891530797101449]
+[20:17:02.500775] [0.6863302139037433, 0.8824404761904762, 0.8689338235294117, 0.7548031496062992, 0.8961730072463768]
+[20:17:02.501108] [0.6786987522281639, 0.8740327380952381, 0.8671875, 0.7641994750656168, 0.888077445652174]
+[20:17:02.501762] Loss 0.743
+[20:17:02.501780] [20:17:02.501781] Loss 0.743
+Loss 0.743[20:17:02.501784] 
+[20:17:02.501786] Loss 0.743
+Loss 0.743
+[20:17:02.501855] Average AUC of the network on the test set images: 0.8186[20:17:02.501856] 
+Average AUC of the network on the test set images: 0.8154
+[20:17:02.501861] [20:17:02.501862] Average AUC of the network on the test set images: 0.8236
+Average AUC of the network on the test set images: 0.8195
+[20:17:02.501770] [20:17:02.501771] Loss 0.743Loss 0.743
+
+[20:17:02.501799] Loss 0.743
+[20:17:02.501836] Average AUC of the network on the test set images: 0.8208
+[20:17:02.501844] Average AUC of the network on the test set images: 0.8177
+[20:17:02.501846] Average AUC of the network on the test set images: 0.8144
+[20:17:02.501775] Loss 0.743
+[20:17:02.501784] Loss 0.743
+[20:17:02.501792] [20:17:02.501795] Loss 0.743Loss 0.743
+
+[20:17:02.501903] Average AUC of the network on the test set images: 0.8099
+[20:17:02.501650] Loss 0.743
+[20:17:02.501656] Loss 0.743
+[20:17:02.501669] Loss 0.743
+[20:17:02.501850] Average AUC of the network on the test set images: 0.8209
+[20:17:02.501854] Average AUC of the network on the test set images: 0.8178
+[20:17:02.501891] [20:17:02.501893] Average AUC of the network on the test set images: 0.8268
+Average AUC of the network on the test set images: 0.8248
+[20:17:02.501726] Average AUC of the network on the test set images: 0.8289
+[20:17:02.501732] Average AUC of the network on the test set images: 0.8242
+[20:17:02.501724] Loss 0.743
+[20:17:02.501789] Average AUC of the network on the test set images: 0.8227
+[20:17:02.501847] Average AUC of the network on the test set images: 0.8210
